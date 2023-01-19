@@ -29,7 +29,7 @@ echo "    <title></title>" >> index.html
 echo "    <link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">" >> index.html
 echo "    <link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin>" >> index.html
 echo "    <link href=\"https://fonts.googleapis.com/css2?family=Gentium+Book+Basic:wght@400;700&family=Lato:wght@400;700&display=swap\" rel=\"stylesheet\">" >> index.html
-echo "    <link href=\"css/modern-normalize.css\" rel=\"stylesheet\">" >> index.html
+echo "    <link href=\"css/normalize.css\" rel=\"stylesheet\">" >> index.html
 echo "    <link href=\"css/style.css\" rel=\"stylesheet\">" >> index.html
 echo "    <script src=\"https://kit.fontawesome.com/b03388ca7d.js\" crossorigin=\"anonymous\"></script>" >> index.html
 echo "</head>" >> index.html

@@ -34,10 +34,33 @@ To do this I changed the directory to one of these folders then created a file. 
 ```
 cd css 
 touch style.css
-
+touch normalize.css
 cd ..
 cd js
 touch page.js
 
 cd ..
 ```
+
+## Step 5
+Once all the folders and files are created its time to enter boilerplate code into files that are needed in every project. I started with the **index.html** file. In this file I put all the head code that I used for every project last semester in Front-End Development. 
+```
+echo "<!DOCTYPE html>" >> index.html
+echo "<html lang=\"en-US\">" >> index.html
+echo "<head>" >> index.html
+echo "    <meta charset=\"utf-8\">" >> index.html
+echo "    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">" >> index.html
+echo "    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">" >> index.html
+echo "    <title></title>" >> index.html
+echo "    <link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">" >> index.html
+echo "    <link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin>" >> index.html
+echo "    <link href=\"https://fonts.googleapis.com/css2?family=Gentium+Book+Basic:wght@400;700&family=Lato:wght@400;700&display=swap\" rel=\"stylesheet\">" >> index.html
+echo "    <link href=\"css/normalize.css\" rel=\"stylesheet\">" >> index.html
+echo "    <link href=\"css/style.css\" rel=\"stylesheet\">" >> index.html
+echo "    <script src=\"https://kit.fontawesome.com/b03388ca7d.js\" crossorigin=\"anonymous\"></script>" >> index.html
+echo "</head>" >> index.html
+echo "<body>" >> index.html 
+echo "    <h1>If blue, html and style sheets are working<h1>" >> index.html
+echo "</body>" >> index.html
+```
+This code contains all the things neccessary for an html page including connecting to the style sheets. To make sure the code executes I added a h1 heading so you can see if the text appears and if the color appears that I put in the style.css file. 
