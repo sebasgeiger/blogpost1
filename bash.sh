@@ -1,11 +1,13 @@
+#Set directory
 cd "/mnt/c/Users/sgeig/OneDrive - clarkson.edu/Desktop/8th Semester/COMM429"
 
+#Get project name set it as directory
 echo Please Enter Project folder name
 read foldername
-
 mkdir $foldername
 cd $foldername
 
+#add folders and files
 mkdir css js img
 touch index.html
 
@@ -19,6 +21,7 @@ touch page.js
 
 cd ..
 
+#add content to html file
 echo "<!DOCTYPE html>" >> index.html
 echo "<html lang=\"en-US\">" >> index.html
 echo "<head>" >> index.html
@@ -37,6 +40,7 @@ echo "<body>" >> index.html
 echo "    <h1>If blue, html and style sheets are working<h1>" >> index.html
 echo "</body>" >> index.html
 
+#add content to css files
 echo "h1 {color: blue;}" >> css/style.css
 
 echo "::before,::after {box-sizing: border-box;}" >> css/normalize.css
