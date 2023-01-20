@@ -39,6 +39,8 @@ echo "</head>" >> index.html
 echo "<body>" >> index.html 
 echo "    <h1>If blue, html and style sheets are working<h1>" >> index.html
 echo "</body>" >> index.html
+echo " <script src=\"js/page.js\"></script>" >> index.html
+echo "</html>" >> index.html
 
 #add content to css files
 echo "h1 {color: blue;}" >> css/style.css
@@ -70,7 +72,8 @@ echo "::-webkit-search-decoration {-webkit-appearance: none;}" >> css/normalize.
 echo "::-webkit-file-upload-button {-webkit-appearance: button; font: inherit;}" >> css/normalize.css
 echo "summary {display: list-item;}" >> css/normalize.css 
 
-
+#add content to javascript file
+echo "document.querySelector('h1').classList.add('blue')" >> js/page.js
 
 
 

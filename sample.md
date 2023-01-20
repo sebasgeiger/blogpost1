@@ -63,6 +63,8 @@ echo "</head>" >> index.html
 echo "<body>" >> index.html 
 echo "    <h1>If blue, html and style sheets are working<h1>" >> index.html
 echo "</body>" >> index.html
+echo " <script src=\"js/page.js\"></script>" >> index.html
+echo "</html>" >> index.html
 ```
 This code contains all the things neccessary for an html page including connecting to the style sheets. To make sure the code executes I added a h1 heading so you can see if the text appears and if the color appears that I put in the style.css file. 
 ### CSS
