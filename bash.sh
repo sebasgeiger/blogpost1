@@ -37,10 +37,9 @@ echo "    <link href=\"css/style.css\" rel=\"stylesheet\">" >> index.html
 echo "    <script src=\"https://kit.fontawesome.com/b03388ca7d.js\" crossorigin=\"anonymous\"></script>" >> index.html
 echo "</head>" >> index.html
 echo "<body>" >> index.html 
-echo "    <div id =1 class=modal>" >> index.html
-echo "          <h1>If blue, html and style sheets are working<h1>" >> index.html
-echo "    <div>" >> index.html
-echo "    <button class=\"btn\">button</button>" >> index.html 
+echo "<h1>If blue, html and style sheets are working<h1>" >> index.html
+echo "<p id=\"demo\">Press button to test Javascript</p>" >> index.html
+echo "<button type=\"button\"</button>"
 echo "</body>" >> index.html
 echo "<script src=\"https://code.jquery.com/jquery-3.3.1.min.js\"integrity=\"sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=\"crossorigin=\"anonymous\"></script>" >> index.html
 echo " <script src=\"js/page.js\"></script>" >> index.html
@@ -77,8 +76,7 @@ echo "::-webkit-file-upload-button {-webkit-appearance: button; font: inherit;}"
 echo "summary {display: list-item;}" >> css/normalize.css 
 
 #add content to javascript file
-echo "\$(\"button\").on(\"click\", function() { var modal = \$(this).data(\"modal\"); \$(modal).show();});" >> js/page.js
-echo "\$(\".modal\").on(\"click\", function(e) {var className = e.target.className;if(className === \"modal\" || className === \"close\"){ \$(this).closest(\".modal\").hide();}});" >> js/page.js
+echo "onclick='document.getElementById(\"demo\").innerHTML = \"Hello JavaScript!\"'>Click Me!</button>" >> js/page.js
 
 
 
