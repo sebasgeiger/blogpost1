@@ -78,7 +78,8 @@ echo "summary {display: list-item;}" >> css/normalize.css
 echo "document.getElementById(\"button\").onclick = function() {myFunction()};" >> js/page.js
 echo "function myFunction() { document.getElementById(\"demo\").innerHTML = \"Javascript Works!\";}" >> js/page.js
 
-
+#open files
+code index.html
 
 
 
