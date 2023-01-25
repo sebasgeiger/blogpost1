@@ -37,12 +37,11 @@ echo "    <link href=\"css/style.css\" rel=\"stylesheet\">" >> index.html
 echo "    <script src=\"https://kit.fontawesome.com/b03388ca7d.js\" crossorigin=\"anonymous\"></script>" >> index.html
 echo "</head>" >> index.html
 echo "<body>" >> index.html 
-echo "<h1>If blue, html and style sheets are working<h1>" >> index.html
+echo "<h1>If blue, html and style sheets are working</h1>" >> index.html
 echo "<p id=\"demo\">Press button to test Javascript</p>" >> index.html
-echo "<button type=\"button\"</button>"
+echo "<button id=\"button\">Button</button>" >> index.html
+echo "<script src=\"js/page.js\"></script>" >> index.html
 echo "</body>" >> index.html
-echo "<script src=\"https://code.jquery.com/jquery-3.3.1.min.js\"integrity=\"sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=\"crossorigin=\"anonymous\"></script>" >> index.html
-echo " <script src=\"js/page.js\"></script>" >> index.html
 echo "</html>" >> index.html
 
 #add content to css files
@@ -76,7 +75,9 @@ echo "::-webkit-file-upload-button {-webkit-appearance: button; font: inherit;}"
 echo "summary {display: list-item;}" >> css/normalize.css 
 
 #add content to javascript file
-echo "onclick='document.getElementById(\"demo\").innerHTML = \"Hello JavaScript!\"'>Click Me!</button>" >> js/page.js
+echo "document.getElementById(\"button\").onclick = function() {myFunction()};" >> js/page.js
+echo "function myFunction() { document.getElementById(\"demo\").innerHTML = \"Javascript Works!\";}" >> js/page.js
+
 
 
 
