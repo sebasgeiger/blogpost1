@@ -109,3 +109,10 @@ To test the javascript file and make sure it was connected to the html file and 
 echo "document.getElementById(\"button\").onclick = function() {myFunction()};" >> js/page.js
 echo "function myFunction() { document.getElementById(\"demo\").innerHTML = \"Javascript Works!\";}" >> js/page.js
 ```
+## 6. Open Files in VS Code
+Once I put all the bolderplate code into all my different files with code that I use for every project as well as some code to make sure that all my sheets are connected and working as they should it is time to open the files that I will use in my code editor which is VS Code. To do this I used the code command and opened my **index.html** sheet, **style.css** sheet and **page.js** sheet. 
+```
+code index.html
+code css/style.css
+code js/page.js
+```

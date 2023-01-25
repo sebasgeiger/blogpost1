@@ -80,12 +80,13 @@ echo "summary {display: list-item;}" >> css/normalize.css
 echo "document.getElementById(\"button\").onclick = function() {myFunction()};" >> js/page.js
 echo "function myFunction() { document.getElementById(\"demo\").innerHTML = \"Javascript Works!\";}" >> js/page.js
 
-#open files
+#open files in VS Code
 code index.html
 code css/style.css
 code js/page.js
 
-
+#open html page in browser
+open index.html
 
 
 
