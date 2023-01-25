@@ -82,8 +82,7 @@ echo "function myFunction() { document.getElementById(\"demo\").innerHTML = \"Ja
 
 #open files
 code index.html
-code css/style.css
-code js/page.js
+
 
 
 

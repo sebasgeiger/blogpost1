@@ -61,12 +61,14 @@ echo "    <link href=\"css/style.css\" rel=\"stylesheet\">" >> index.html
 echo "    <script src=\"https://kit.fontawesome.com/b03388ca7d.js\" crossorigin=\"anonymous\"></script>" >> index.html
 echo "</head>" >> index.html
 echo "<body>" >> index.html 
-echo "    <h1>If blue, html and style sheets are working<h1>" >> index.html
+echo "<h1>If blue, html and style sheets are working</h1>" >> index.html
+echo "<p id=\"demo\">Press button to test Javascript</p>" >> index.html
+echo "<button id=\"button\">Button</button>" >> index.html
+echo "<script src=\"js/page.js\"></script>" >> index.html
 echo "</body>" >> index.html
-echo " <script src=\"js/page.js\"></script>" >> index.html
 echo "</html>" >> index.html
 ```
-This code contains all the things neccessary for an html page including connecting to the style sheets. To make sure the code executes I added a h1 heading so you can see if the text appears and if the color appears that I put in the style.css file. 
+This code contains all the things neccessary for an html page including connecting to the style sheets. To make sure the code executes I added a h1 heading so you can see if the text appears and if the color appears that I put in the style.css file. I also added a line of text and a button that I will use to test the javascript file I created. The text on the line will change once the button is pressed. 
 ### CSS
 For the css files I added all the code from the normalize style sheets that I used for almost every front end project. This sets lots of defaults styles that can be universally used for any project. 
 ```
@@ -102,4 +104,8 @@ I also added one line of code to the style.css file. This line makes the heading
 echo "h1 {color: blue;}" >> css/style.css
 ```
 ### Javascript
-
+To test the javascript file and make sure it was connected to the html file and worked I wrote a simple function that changed a line of text on the page when the button was clicked. 
+```
+echo "document.getElementById(\"button\").onclick = function() {myFunction()};" >> js/page.js
+echo "function myFunction() { document.getElementById(\"demo\").innerHTML = \"Javascript Works!\";}" >> js/page.js
+```
