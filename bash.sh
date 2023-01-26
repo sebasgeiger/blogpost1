@@ -85,8 +85,5 @@ code index.html
 code css/style.css
 code js/page.js
 
-#open html page in browser
-open index.html
-
 
 

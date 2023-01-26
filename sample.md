@@ -2,6 +2,22 @@
 
 The purpose for this blog was to write a command-line script that created a boilerplate for a project starter. This script will create a project folder with the personal file and folder setup I perfer inside that folder. It also provides some standard code in some files that appear in every project. 
 
+To run this script you need to go to the blogpost1 directory with is below.
+```
+sebastiangeiger@DESKTOP-59SFL6R:/mnt/c/Users/sgeig/OneDrive - clarkson.edu/Desktop/8th Semester/COMM429/blogpost1$
+```
+Once you are in this directory you can run the script by opening the Linux Command Line.
+you can do this by holding SHIFT and right clicking inside the folder. A menu should appear where you click the "Open Linux Shell Here" option.
+![](lclopen.jpg)
+Once the command line opens you can type the 
+```
+bash bash.sh
+```
+This will execute the script and set you up with your new project environment.
+
+## Creating the Script and What it does
+Below are the steps I took to create the script and what each part of the script does. Each part of the script has a purpose and all together it creates a good starting point for a new project environment. 
+
 ## 1. Set Directory
 
 The first step for me was to set the directory I want my projects to go at the top of my script. I chose the folder I use for this class.
@@ -116,3 +132,6 @@ code index.html
 code css/style.css
 code js/page.js
 ```
+## Conclusion
+At this point you have everything you need to begin working on a project. Your directory is set up with an index.html file and folders for your css code, javascript code, and images. The files have some basic code that you will need for every project as well as some code to test the connection between all the sheets. This way you can be confident that everything is set up correctly and you can focus on beginning your project. 
+Where this script leads you off is to quickly get rid of the test code and begin your project. This should save a lot of setup time and allows you to start right away with the fun stuff. 
