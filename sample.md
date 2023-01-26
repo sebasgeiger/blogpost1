@@ -7,7 +7,7 @@ To run this script you need to go to the blogpost1 directory with is below.
 sebastiangeiger@DESKTOP-59SFL6R:/mnt/c/Users/sgeig/OneDrive - clarkson.edu/Desktop/8th Semester/COMM429/blogpost1$
 ```
 Once you are in this directory you can run the script by opening the Linux Command Line.
-you can do this by holding SHIFT and right clicking inside the folder. A menu should appear where you click the "Open Linux Shell Here" option.
+you can do this by holding SHIFT and right clicking inside the folder. A menu should appear where you click the "Open Linux shell here" option.
 ![](lclopen.jpg)
 Once the command line opens you can type the 
 ```
