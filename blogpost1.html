@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<!-- saved from url=(0040)https://sebasgeiger.github.io/blogpost1/ -->
+<html lang="en-US"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>blogpost1</title>
+<meta name="generator" content="Jekyll v3.9.2">
+<meta property="og:title" content="blogpost1">
+<meta property="og:locale" content="en_US">
+<link rel="canonical" href="https://sebasgeiger.github.io/blogpost1/">
+<meta property="og:url" content="https://sebasgeiger.github.io/blogpost1/">
+<meta property="og:site_name" content="blogpost1">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary">
+<meta property="twitter:title" content="blogpost1">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","headline":"blogpost1","name":"blogpost1","url":"https://sebasgeiger.github.io/blogpost1/"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <style class="anchorjs"></style><link rel="stylesheet" href="./blogpost1_files/style.css">
+    <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
+
+<!-- Setup Google Analytics -->
+
+
+
+<!-- You can set your favicon here -->
+<!-- link rel="shortcut icon" type="image/x-icon" href="/blogpost1/favicon.ico" -->
+
+<!-- end custom head snippets -->
+
+  </head>
+  <body>
+    <div class="container-lg px-3 my-5 markdown-body">
+      
+
+      <h1 id="blogpost1">blogpost1</h1>
+
+<p>The purpose for this blog was to write a command-line script that created a boilerplate for a project starter. This script will create a project folder with the personal file and folder setup I perfer inside that folder. It also provides some standard code in some files that appear in every project.</p>
+
+<p>To run this script you need to go to the blogpost1 directory with is below.</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sebastiangeiger@DESKTOP-59SFL6R:/mnt/c/Users/sgeig/OneDrive - clarkson.edu/Desktop/8th Semester/COMM429/blogpost1$
+</code></pre></div></div>
+<p>Once you are in this directory you can run the script by opening the Linux Command Line.
+you can do this by holding SHIFT and right clicking inside the folder. A menu should appear where you click the “Open Linux shell here” option.
+<img src="./blogpost1_files/lclopen.jpg" alt="">
+Once the command line opens you can type the</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>bash bash.sh
+</code></pre></div></div>
+<p>This will execute the script and set you up with your new project environment.</p>
+
+<h2 id="creating-the-script-and-what-it-does">Creating the Script and What it does<a class="anchorjs-link " href="https://sebasgeiger.github.io/blogpost1/#creating-the-script-and-what-it-does" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h2>
+<p>Below are the steps I took to create the script and what each part of the script does. Each part of the script has a purpose and all together it creates a good starting point for a new project environment.</p>
+
+<h2 id="1-set-directory">1. Set Directory<a class="anchorjs-link " href="https://sebasgeiger.github.io/blogpost1/#1-set-directory" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h2>
+
+<p>The first step for me was to set the directory I want my projects to go at the top of my script. I chose the folder I use for this class.</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cd "/mnt/c/Users/sgeig/OneDrive - clarkson.edu/Desktop/8th Semester/COMM429"
+</code></pre></div></div>
+<p>I used quotes around the directory because of the spaces I have in my directory. The quotes prevent any errors occuring with the terminal thinking that the spaces mean that there are multiple arguements.</p>
+
+<h2 id="2-create-project-variable">2. Create Project Variable<a class="anchorjs-link " href="https://sebasgeiger.github.io/blogpost1/#2-create-project-variable" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h2>
+<p>Next I created an input statement for the user to a name for the project folder. The script takes this input as a variable, it reads in this variable and uses it as the name of the folder, then sets the directory to this folder.</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>echo Please Enter Project folder name
+read foldername
+mkdir $foldername
+cd $foldername
+</code></pre></div></div>
+<p>foldername is the name of the variable that I read in from the user and use to create a folder and set the new directory.</p>
+
+<h2 id="3-set-directory-as-new-project">3. Set Directory as New Project<a class="anchorjs-link " href="https://sebasgeiger.github.io/blogpost1/#3-set-directory-as-new-project" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h2>
+<p>Once I have my project folder created I want to add the folders and files I need inside that folder. With the directory set I can write commands to add folders and files. I added a css,js, and img folder as well as a index.html file.</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mkdir css js img
+touch index.html
+</code></pre></div></div>
+
+<h2 id="4-create-folders-and-files">4. Create Folders and Files<a class="anchorjs-link " href="https://sebasgeiger.github.io/blogpost1/#4-create-folders-and-files" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h2>
+<p>My next step was to create the docs for each of the folders in my project folder. The <strong>css</strong> folder will contain my css style sheets, <strong>js</strong> folder will contain my javascript files, and the <strong>img</strong> folder will contain any images I use in my project.</p>
+
+<p>To do this I changed the directory to one of these folders then created a file. Then I backuped my directory one step and repeated this process. I only needed to add files to the <strong>css</strong> and <strong>js</strong> folders, because every project will use at least a little bit of the same css and javascript code, but the images will change every project.</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cd css 
+touch style.css
+touch normalize.css
+cd ..
+cd js
+touch page.js
+
+cd ..
+</code></pre></div></div>
+
+<h2 id="5-add-boilerplate-code">5. Add Boilerplate Code<a class="anchorjs-link " href="https://sebasgeiger.github.io/blogpost1/#5-add-boilerplate-code" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h2>
+<h3 id="html">HTML<a class="anchorjs-link " href="https://sebasgeiger.github.io/blogpost1/#html" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h3>
+<p>Once all the folders and files are created its time to enter boilerplate code into files that are needed in every project. I started with the <strong>index.html</strong> file. In this file I put all the head code that I used for every project last semester in Front-End Development.</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>echo "&lt;!DOCTYPE html&gt;" &gt;&gt; index.html
+echo "&lt;html lang=\"en-US\"&gt;" &gt;&gt; index.html
+echo "&lt;head&gt;" &gt;&gt; index.html
+echo "    &lt;meta charset=\"utf-8\"&gt;" &gt;&gt; index.html
+echo "    &lt;meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\"&gt;" &gt;&gt; index.html
+echo "    &lt;meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"&gt;" &gt;&gt; index.html
+echo "    &lt;title&gt;&lt;/title&gt;" &gt;&gt; index.html
+echo "    &lt;link rel=\"preconnect\" href=\"https://fonts.googleapis.com\"&gt;" &gt;&gt; index.html
+echo "    &lt;link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin&gt;" &gt;&gt; index.html
+echo "    &lt;link href=\"https://fonts.googleapis.com/css2?family=Gentium+Book+Basic:wght@400;700&amp;family=Lato:wght@400;700&amp;display=swap\" rel=\"stylesheet\"&gt;" &gt;&gt; index.html
+echo "    &lt;link href=\"css/normalize.css\" rel=\"stylesheet\"&gt;" &gt;&gt; index.html
+echo "    &lt;link href=\"css/style.css\" rel=\"stylesheet\"&gt;" &gt;&gt; index.html
+echo "    &lt;script src=\"https://kit.fontawesome.com/b03388ca7d.js\" crossorigin=\"anonymous\"&gt;&lt;/script&gt;" &gt;&gt; index.html
+echo "&lt;/head&gt;" &gt;&gt; index.html
+echo "&lt;body&gt;" &gt;&gt; index.html 
+echo "&lt;h1&gt;If blue, html and style sheets are working&lt;/h1&gt;" &gt;&gt; index.html
+echo "&lt;p id=\"demo\"&gt;Press button to test Javascript&lt;/p&gt;" &gt;&gt; index.html
+echo "&lt;button id=\"button\"&gt;Button&lt;/button&gt;" &gt;&gt; index.html
+echo "&lt;script src=\"js/page.js\"&gt;&lt;/script&gt;" &gt;&gt; index.html
+echo "&lt;/body&gt;" &gt;&gt; index.html
+echo "&lt;/html&gt;" &gt;&gt; index.html
+</code></pre></div></div>
+<p>This code contains all the things neccessary for an html page including connecting to the style sheets. To make sure the code executes I added a h1 heading so you can see if the text appears and if the color appears that I put in the style.css file. I also added a line of text and a button that I will use to test the javascript file I created. The text on the line will change once the button is pressed.</p>
+<h3 id="css">CSS<a class="anchorjs-link " href="https://sebasgeiger.github.io/blogpost1/#css" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h3>
+<p>For the css files I added all the code from the normalize style sheets that I used for almost every front end project. This sets lots of defaults styles that can be universally used for any project.</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>echo "::before,::after {box-sizing: border-box;}" &gt;&gt; css/normalize.css
+echo "html {-moz-tab-size: 4;tab-size: 4;}" &gt;&gt; css/normalize.css
+echo "html {line-height: 1.15; -webkit-text-size-adjust: 100%;}" &gt;&gt; css/normalize.css
+echo "body {margin: 0;}" &gt;&gt; css/normalize.css
+echo "body {font-family:system-ui, apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';}" &gt;&gt; css/normalize.css
+echo "hr {height: 0; color: inherit; }" &gt;&gt; css/normalize.css
+echo "b,strong {font-weight: bolder;}" &gt;&gt; css/normalize.css
+echo "code,kbd,samp,pre {font-family:ui-monospace,SFMono-Regular,Consolas,'Liberation Mono',Menlo,monospace; font-size: 1em; }" &gt;&gt; css/normalize.css
+echo "small {font-size: 80%;}" &gt;&gt; css/normalize.css
+echo "sub,sup {font-size: 75%; line-height: 0;position: relative; vertical-align: baseline;}" &gt;&gt; css/normalize.css
+echo "sub {bottom: -0.25em;}" &gt;&gt; css/normalize.css
+echo "sup {top: -0.5em;}" &gt;&gt; css/normalize.css
+echo "table {text-indent: 0; border-color: inherit;}" &gt;&gt; css/normalize.css
+echo "button,input,optgroup,select,textarea {font-family: inherit; font-size: 100%; line-height: 1.15; margin: 0;}" &gt;&gt; css/normalize.css
+echo "button,select {text-transform: none;}" &gt;&gt; css/normalize.css
+echo "button,[type='button'],[type='reset'],[type='submit'] {-webkit-appearance: button;}" &gt;&gt; css/normalize.css
+echo "::-moz-focus-inner {border-style: none;padding: 0;}" &gt;&gt; css/normalize.css
+echo ":-moz-focusring {outline: 1px dotted ButtonText;}" &gt;&gt; css/normalize.css
+echo ":-moz-ui-invalid {box-shadow: none;}" &gt;&gt; css/normalize.css
+echo "legend {padding: 0;}" &gt;&gt; css/normalize.css
+echo "progress {vertical-align: baseline;}" &gt;&gt; css/normalize.css
+echo "::-webkit-inner-spin-button,::-webkit-outer-spin-button {height: auto;}" &gt;&gt; css/normalize.css
+echo "[type='search'] {-webkit-appearance: textfield; outline-offset: -2px;}" &gt;&gt; css/normalize.css
+echo "::-webkit-search-decoration {-webkit-appearance: none;}" &gt;&gt; css/normalize.css
+echo "::-webkit-file-upload-button {-webkit-appearance: button; font: inherit;}" &gt;&gt; css/normalize.css
+echo "summary {display: list-item;}" &gt;&gt; css/normalize.css 
+</code></pre></div></div>
+<p>I also added one line of code to the style.css file. This line makes the heading in the html file blue. This is to make sure that the style sheets are connected to the html file and is working correctly.</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>echo "h1 {color: blue;}" &gt;&gt; css/style.css
+</code></pre></div></div>
+<h3 id="javascript">Javascript<a class="anchorjs-link " href="https://sebasgeiger.github.io/blogpost1/#javascript" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h3>
+<p>To test the javascript file and make sure it was connected to the html file and worked I wrote a simple function that changed a line of text on the page when the button was clicked.</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>echo "document.getElementById(\"button\").onclick = function() {myFunction()};" &gt;&gt; js/page.js
+echo "function myFunction() { document.getElementById(\"demo\").innerHTML = \"Javascript Works!\";}" &gt;&gt; js/page.js
+</code></pre></div></div>
+<h2 id="6-open-files-in-vs-code">6. Open Files in VS Code<a class="anchorjs-link " href="https://sebasgeiger.github.io/blogpost1/#6-open-files-in-vs-code" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h2>
+<p>Once I put all the bolderplate code into all my different files with code that I use for every project as well as some code to make sure that all my sheets are connected and working as they should it is time to open the files that I will use in my code editor which is VS Code. To do this I used the code command and opened my <strong>index.html</strong> sheet, <strong>style.css</strong> sheet and <strong>page.js</strong> sheet.</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>code index.html
+code css/style.css
+code js/page.js
+</code></pre></div></div>
+<h2 id="conclusion">Conclusion<a class="anchorjs-link " href="https://sebasgeiger.github.io/blogpost1/#conclusion" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h2>
+<p>At this point you have everything you need to begin working on a project. Your directory is set up with an index.html file and folders for your css code, javascript code, and images. The files have some basic code that you will need for every project as well as some code to test the connection between all the sheets. This way you can be confident that everything is set up correctly and you can focus on beginning your project. 
+Where this script leads you off is to quickly get rid of the test code and begin your project. This should save a lot of setup time and allows you to start right away with the fun stuff.</p>
+
+
+      
+    </div>
+    <script src="./blogpost1_files/anchor.min.js.download" integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" crossorigin="anonymous"></script>
+    <script>anchors.add();</script>
+  
+
+</body></html>
